@@ -1,0 +1,14 @@
+package com.insurance.utility;
+
+public class HealthInsuranceCompany {
+	public static void main(String[] args) {
+		Customer claim = new Customer();
+		CustomerDetails customerDetails =claim.claimingInsurance();
+		Surveyor sc = new Surveyor();
+		Object obj =sc.validatingDetails(customerDetails);
+		Manager manager = new Manager();
+		boolean reuslt =manager.managerRemark();
+		System.out.println(result);
+	}
+
+}

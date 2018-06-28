@@ -1,0 +1,37 @@
+package com.stackroute.datamunger.query.parser;
+
+/*
+ * This class is used for storing name of field, condition and value for 
+ * each conditions
+ * */
+public class Restriction {
+	private String properyName;
+	private String properyValue;
+	private String Condition;
+	public Restriction(String properyName, String properyValue, String condition) {
+		super();
+		this.properyName = properyName;
+		this.properyValue = properyValue;
+		Condition = condition;
+	}
+	public String getProperyName() {
+		return properyName;
+	}
+	public void setProperyName(String properyName) {
+		this.properyName = properyName;
+	}
+	public String getProperyValue() {
+		return properyValue;
+	}
+	public void setProperyValue(String properyValue) {
+		this.properyValue = properyValue;
+	}
+	public String getCondition() {
+		return Condition;
+	}
+	public void setCondition(String condition) {
+		Condition = condition;
+	}
+	
+
+}

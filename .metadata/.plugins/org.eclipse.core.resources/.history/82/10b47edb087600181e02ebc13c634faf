@@ -1,0 +1,21 @@
+package com.stackroute.utility;
+
+import static org.junit.Assert.*;
+
+import org.junit.Test;
+
+public class FirstLastDayOfWeekTest {
+
+	@Test
+	public void testGetFirstDayOfWeek() {
+		FirstLastDayOfWeek obj = new FirstLastDayOfWeek();
+		String expectedValue ="Mon 18/10/2018"
+		System.out.println(obj.getFirstDayOfWeek());
+	}
+
+	@Test
+	public void testGetLastDayOfWeek() {
+		fail("Not yet implemented");
+	}
+
+}

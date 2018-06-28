@@ -1,0 +1,9 @@
+package com.stackroute.utility;
+
+import java.util.HashMap;
+
+public class MapModifier {
+	public HashMap<String,String> mapModifier(HashMap<String,String> map){
+		return map;
+	}
+}

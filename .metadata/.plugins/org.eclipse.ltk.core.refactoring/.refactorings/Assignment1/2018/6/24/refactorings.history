@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Move 4 elements to &apos;Assignment1/src/Assignment&apos;&#x0A;- Original project: &apos;Assignment1&apos;&#x0A;- Destination element: &apos;Assignment1/src/Assignment&apos;&#x0A;- Original elements:&#x0A;     Iteration.java&#x0A;     Palindrome.java&#x0A;     TomJerry.java&#x0A;     LetterCheck.java&#x0A;- Update references to refactored element" description="Move compilation units" destination="/src&lt;Assignment" element1="/src&lt;{Iteration.java" element2="/src&lt;{Palindrome.java" element3="/src&lt;{TomJerry.java" element4="/src&lt;{LetterCheck.java" files="0" flags="589830" folders="0" id="org.eclipse.jdt.ui.move" policy="org.eclipse.jdt.ui.moveResources" qualified="false" references="true" stamp="1528950724896" units="4" version="1.0"/>
+</session>

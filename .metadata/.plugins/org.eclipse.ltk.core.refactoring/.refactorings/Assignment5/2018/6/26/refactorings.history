@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename type &apos;com.stackroute.utility.NumberOfCounts&apos; to &apos;NumberOfStrings&apos;&#x0A;- Original project: &apos;Assignment5&apos;&#x0A;- Original element: &apos;com.stackroute.utility.NumberOfCounts&apos;&#x0A;- Renamed element: &apos;com.stackroute.utility.NumberOfStrings&apos;&#x0A;- Update references to refactored element&#x0A;- Update textual occurrences in comments and strings" description="Rename type &apos;NumberOfCounts&apos;" flags="589830" id="org.eclipse.jdt.ui.rename.type" input="/src\/main\/java&lt;com.stackroute.utility{NumberOfCounts.java[NumberOfCounts" matchStrategy="1" name="NumberOfStrings" qualified="false" references="true" similarDeclarations="false" stamp="1530022690398" textual="false" version="1.0"/>
+</session>

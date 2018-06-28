@@ -1,0 +1,15 @@
+package com.stackroute.utility;
+
+public class OccurenceOfString {
+	public int totalOccurenceOfStirng(String string,String substring) {
+		String actual_string[] = string.toLowerCase().trim().split(" ");
+		String replaced_String[] = string.trim().split(substring);
+		return actual_string.length-replaced_String.length;
+		}
+	public static void main(String[] args) {
+		OccurenceOfString occurenceOfString = new OccurenceOfString();
+		System.out.println(occurenceOfString.totalOccurenceOfStirng("java is java again java and then java and again","java")); 
+	}
+
+
+}

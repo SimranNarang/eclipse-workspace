@@ -1,0 +1,15 @@
+package com.stackroute.utility;
+
+import static org.junit.Assert.*;
+
+import org.junit.Test;
+
+public class StringCounterTest {
+
+	@Test
+	public void testStringCounter() {
+		StringCounter sc = new StringCounter();
+		sc.stringCounter(new String[]{"a","a","a","b","b","c","d","d"});
+	}
+
+}

@@ -1,0 +1,9 @@
+package com.stackroute.utility;
+
+public class ReplacingCharacter {
+	public String replacingCharacter(String string) {
+		String replaced_d = string.replaceAll("d|D","f")
+		
+	}
+
+}

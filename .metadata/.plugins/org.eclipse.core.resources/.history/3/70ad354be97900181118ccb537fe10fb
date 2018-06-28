@@ -1,0 +1,58 @@
+package com.stackroute.datamunger.query;
+
+import java.util.Date;
+import java.util.regex.Pattern;
+
+/*
+ * Implementation of DataTypeDefinitions class. This class contains a method getDataTypes() 
+ * which will contain the logic for getting the datatype for a given field value. This
+ * method will be called from QueryProcessors.   
+ * In this assignment, we are going to use Regular Expression to find the 
+ * appropriate data type of a field. 
+ * Integers: should contain only digits without decimal point 
+ * Double: should contain digits as well as decimal point 
+ * Date: Dates can be written in many formats in the CSV file. 
+ * However, in this assignment,we will test for the following date formats('dd/mm/yyyy',
+ * 'mm/dd/yyyy','dd-mon-yy','dd-mon-yyyy','dd-month-yy','dd-month-yyyy','yyyy-mm-dd')
+ */
+public class DataTypeDefinitions {
+
+	//method stub
+	public static Object getDataType(String input) {
+	
+		// checking for Integer
+			Pattern patternInt = Pattern.compile("[0-9]+");
+		// checking for floating point numbers
+			Pattern patternFloat = Pattern.compile("[0-9]+\\.[0-9]+");
+		// checking for date format dd/mm/yyyy
+			Pattern patternDate1 = Pattern.compile("((0[1-9]|[12]\\d|3[01])\\/(0[1-9]|1[0-2])\\/[12]\\d{3})");
+		// checking for date format mm/dd/yyyy
+			Pattern patternDate2 = Pattern.compile("((0[1-9]|1[0-2])\\/(0[1-9]|[12]\\d|3[01])\\/[12]\\d{3})");
+		// checking for date format dd-mon-yy
+			Pattern patternDate3 = Pattern.compile("((0[1-9]|1[0-2])-[a-zA-Z]{3}-\\d{2})");
+		// checking for date format dd-mon-yyyy
+			Pattern patternDate4 = Pattern.compile("((0[1-9]|1[0-2])-[a-zA-Z]{3}-[12]\\d{3})");
+		// checking for date format dd-month-yy
+			Pattern patternDate5 = Pattern.compile("((0[1-9]|1[0-2])-[January|February|March|April|May|June|July|August|September|October|November|December]-\\d{2})",Pattern.CASE_INSENSITIVE);
+		// checking for date format dd-month-yyyy
+			Pattern patternDate6 = Pattern.compile("((0[1-9]|1[0-2])-[January|February|March|April|May|June|July|August|September|October|November|December]-[12]\\d{3})",Pattern.CASE_INSENSITIVE);
+		// checking for date format yyyy-mm-dd
+			Pattern patternDate7 = Pattern.compile("([1-2]\\d{3}-(0[1-9]|1[0-2])-(0[1-9]|[12]\\d|3[01]))");
+			if(patternInt.matcher(input).matches()) {
+				Integer a =Integer.parseInt(input);
+				return a.getClass().getName();
+			}else if(patternFloat.matcher(input).matches()) {
+				Float a =Float.parseFloat(input);
+				return a.getClass().getName();
+			}else if(patternDate1.matcher(input).matches()||patternDate2.matcher(input).matches()||patternDate3.matcher(input).matches()||patternDate4.matcher(input).matches()||patternDate5.matcher(input).matches()||patternDate6.matcher(input).matches()||patternDate7.matcher(input).matches()) {
+				Date date = new Date();
+				return date.getClass().getName();
+			}else {
+				return input.getClass().getName();
+			}
+		
+	}
+	
+
+	
+}

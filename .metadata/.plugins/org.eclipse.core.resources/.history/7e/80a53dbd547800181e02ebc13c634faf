@@ -1,0 +1,19 @@
+package com.stackroute.utility;
+
+public class OccurenceOfString {
+	public int totalOccurenceOfStirng(String string,String substring) {
+		String actual_string[] = string.toLowerCase().trim().split("\\s");
+		String replacedString = string.toLowerCase().replaceAll(substring.toLowerCase(),"");
+		String replaced_String[] = replacedString.trim().split("\\s| ");
+		for (String string2 : replaced_String) {
+			System.out.println(string2);
+		}
+		return actual_string.length-replaced_String.length;
+		}
+	public static void main(String[] args) {
+		OccurenceOfString occurenceOfString = new OccurenceOfString();
+		System.out.println(occurenceOfString.totalOccurenceOfStirng("java is java again java and then java","java")); 
+	}
+
+
+}

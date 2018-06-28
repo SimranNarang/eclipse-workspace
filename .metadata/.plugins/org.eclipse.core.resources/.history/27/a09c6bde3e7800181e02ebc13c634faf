@@ -1,0 +1,16 @@
+package com.stackroute.utility;
+
+
+public class LongestSubstringFinder {
+	public String longestSubstring(String string) {
+		String max_substring="";
+		String substring="";
+		
+		
+		
+		
+		
+		return max_substring;
+	}
+
+}

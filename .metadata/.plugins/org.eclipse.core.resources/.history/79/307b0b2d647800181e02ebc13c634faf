@@ -1,0 +1,14 @@
+package com.stackroute.utility;
+
+import static org.junit.Assert.*;
+
+import org.junit.Test;
+
+public class RegexFindTextTest {
+
+	@Test
+	public void testIndexStrings() {
+		fail("Not yet implemented");
+	}
+
+}

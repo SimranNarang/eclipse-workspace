@@ -1,0 +1,17 @@
+package com.insurance.utility;
+
+public class Surveyor implements Employee {
+	public Object validatingDetails(CustomerDetails cd) {
+		/*
+		 * validating details of customer and create a validated object! 
+		 */
+		
+		Manager manager = new Manager();
+		if(manager.managerRemark(/*validated object*/))
+			return true;
+		else 
+			return false;
+			
+	}
+
+}

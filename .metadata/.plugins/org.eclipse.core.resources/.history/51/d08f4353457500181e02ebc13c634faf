@@ -1,0 +1,13 @@
+package com.insurance.utility;
+
+public class Manager implements Employee{
+
+	public boolean managerRemark(/*validated object*/) {
+		
+		/*
+		 * will decide and return true or false!!
+		 */
+		
+		return true;
+	}
+}

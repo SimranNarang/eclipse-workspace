@@ -1,0 +1,21 @@
+package com.stackroute.utility;
+
+import java.util.HashMap;
+
+public class NumberOfCounts {
+
+	public String numberOfString(String string) {
+		HashMap<String,Integer> counter = new HashMap<>();
+		String words[] = string.trim().split("\\W|\\s|");
+		for (String strings : words) {
+			System.out.println(strings);
+			if(counter.containsKey(strings)&&!string.isEmpty()s) {
+				counter.put(strings, counter.get(strings)+1);
+			}else if(!string.isEmpty()) {
+				counter.put(strings,1);
+			}
+		}
+		return counter.toString();
+		
+	}
+}

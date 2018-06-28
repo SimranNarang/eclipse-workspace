@@ -1,0 +1,40 @@
+package com.stackroute.utility;
+
+import java.util.ArrayList;
+
+public class ExceptionCreation {
+	public String firstException() {
+		try {
+			int a[]= new int[-20]; 
+		}catch(NegativeArraySizeException error) {
+			return error.toString();
+		}
+		return null;
+	}
+	
+	public String secondException() {
+		try {
+			ArrayList<String> s = new ArrayList<>();
+
+	        //Set index deliberately as 1 (not zero)
+	        s.add(1,"Elephant");
+
+	        int l=s.size();      
+		}catch(IndexOutOfBoundsException error) {
+			return error.toString();
+		}
+		return null;
+	}
+	
+	public String thirdException() {
+		try {
+			int a[]= new int[1];
+			int b = a[0];
+			 
+		}catch(NullPointerException error) {
+			return error.toString();
+		}
+		return null;
+	}
+
+}

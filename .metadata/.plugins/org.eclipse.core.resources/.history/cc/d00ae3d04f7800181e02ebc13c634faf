@@ -1,0 +1,11 @@
+package com.stackroute.utility;
+
+public class OccurenceOfString {
+	public int totalOccurenceOfStirng(String string,String substring) {
+		String actual_string[] = string.trim().split(" ");
+		String replaced_String[] = (string.replaceAll(substring,"")).trim().split(" ");
+		
+		return actual_string.length-replaced_String.length;
+		}
+
+}

@@ -1,0 +1,15 @@
+package com.insurance.utility;
+
+public class Manager implements Employee{
+	
+	public boolean managerRemark(CustomerDetails customerDetails) {
+		
+				Surveyor sc = new Surveyor();
+		boolean obj= sc.validatingDetails(customerDetails);
+		/*
+		 * will decide and return true or false!!
+		 */
+
+		return true;
+	}
+}

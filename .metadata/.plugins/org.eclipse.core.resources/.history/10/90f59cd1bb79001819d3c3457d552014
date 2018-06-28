@@ -1,0 +1,11 @@
+package com.stackroute.utility;
+
+public class SetSorter {
+	public ArrayList<String> sortSet(String[] names) {
+		Set<String> set = new TreeSet<String>(String.CASE_INSENSITIVE_ORDER);
+		set.addAll(Arrays.asList(names));
+		ArrayList<String> list = new ArrayList<String>(set);
+		return list;
+	}
+
+}

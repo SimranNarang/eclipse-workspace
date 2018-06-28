@@ -1,0 +1,14 @@
+package com.insurance.utility;
+
+public class Surveyor implements Employee {
+	public Object validatingDetails(CustomerDetails cd) {
+		/*
+		 * validating details of customer and create a validated object! 
+		 */
+		
+		return new Object();
+
+			
+	}
+
+}

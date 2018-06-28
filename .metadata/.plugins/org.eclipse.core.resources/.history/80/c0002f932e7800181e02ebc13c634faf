@@ -1,0 +1,28 @@
+package com.stackroute.utility;
+
+public class ExceptionCreation {
+	public String firstException() {
+		try {
+			int a[]= new int[-20]; 
+		}catch(NegativeArraySizeException error) {
+			return error.toString();
+		}
+	}
+	
+	public void secondException() {
+		/*try {
+		*/	throw new IndexOutOfBoundsException("Error two"); 
+		/*}catch(IndexOutOfBoundsException error) {
+			System.out.println(error.getMessage());
+		}*/
+	}
+	
+	public void thirdException() {
+		/*try {
+		*/	throw new NullPointerException("Error three"); 
+		/*}catch(NullPointerException error) {
+			System.out.println(error.getMessage());
+		}*/
+	}
+
+}
